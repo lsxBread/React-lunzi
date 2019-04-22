@@ -1,17 +1,18 @@
-import React from 'react';
-import './importIcons';
-import './icon.scss';
+import React from "react";
+import "./importIcons";
+import "./icon.scss";
 
 interface IconProps {
-    name: string;
+  name: string;
+	onClick: () => void;
 }
 
-const Icon: React.FunctionComponent<IconProps> = (props) => {
-    return (
-        <svg className='fui-icon'>
-            <use xlinkHref={`#${props.name}`} />
-        </svg>
-    )
-}
+const Icon: React.FunctionComponent<IconProps> = props => {
+  return (
+    <svg className="fui-icon" onClick={props.onClick}>
+      <use xlinkHref={`#${props.name}`} />
+    </svg>
+  );
+};
 
-export default Icon
+export default Icon;
