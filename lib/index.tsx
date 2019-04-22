@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './button';
+import Icon from './icon';
 
 ReactDOM.render(
-    <Button />,
+    <Icon name="youtube"/>,
     document.getElementById('root')
 )
