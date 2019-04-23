@@ -7,7 +7,7 @@ module.exports = {
     },
     "collectCoverage": true,
     "collectCoverageFrom": ["lib/**/*.{ts,tsx}", "!**/node_modules/**"],
-    "coverageDerectory": "coverage",
+    "coverageDirectory": "coverage",
     "coverageReporters": ['text', 'lcov'],
     "reporters": ["default"],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|jsx|js|ts)?$",
