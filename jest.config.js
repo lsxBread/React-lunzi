@@ -5,7 +5,7 @@ module.exports = {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|jsx)?$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|jsx|js|ts)?$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -14,4 +14,9 @@ module.exports = {
       "json",
       "node"
     ],
+    "moduleNameMapper":{
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "setupFilesAfterEnv": ["<rootDir>/setupTests.js"]
   }
