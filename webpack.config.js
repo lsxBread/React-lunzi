@@ -7,7 +7,7 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
     output: {
-        path: path.resolve(__dirname, 'dist/lib'),
+        path: path.resolve(__dirname, 'dist/'),
         library: 'FUI',
         libraryTarget: 'umd',
     },
