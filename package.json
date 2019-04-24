@@ -1,7 +1,8 @@
 {
   "name": "react-lunzi",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
+  "files": ["/dist"],
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
@@ -14,7 +15,7 @@
     "url": "git+https://github.com/lsxBread/React-lunzi.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lsxBread/React-lunzi/issues"
   },
